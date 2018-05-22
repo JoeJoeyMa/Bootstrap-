@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fashionatte  | Home </title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		<!-- web-font -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!-- //web-font -->
+		<!-- js -->
+		<script src="js/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- //js -->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<!-- //end-smoth-scrolling -->
+	</head>
+	<body>
+		<!-- header -->
+		<div id="home" class="header">
+			<div class="top-nav">
+						<div class="nav-icon">
+							<a href="#" class="right_bt" id="activator"><span> </span> </a>
+						</div>
+						 <div class="box" id="box" style="top: -1000px;">
+							 <div class="box_content">        					                         
+								<div class="box_content_center">
+								 	<div class="form_content">
+										<div class="menu_box_list">
+											<ul>
+												<li><a href="#home" class="scroll"><span>首页</span></a></li>
+												<li><a href="#gallery" class="scroll"><span>展示</span></a></li>
+												<li><a href="#skills" class="scroll"><span>关于我们</span></a></li>
+												<li><a href="#contact" class="scroll"><span>联系我们</span></a></li>
+											</ul>
+										</div>
+										<a class="boxclose" id="boxclose"> <span> </span></a>
+									</div>                                  
+								</div> 	
+							</div>  	  
+						</div>
+					<!-- start-click-drop-down-menu -->
+			        <!-- start-dropdown -->
+			         <script type="text/javascript">
+						var $ = jQuery.noConflict();
+							$(function() {
+								$('#activator').click(function(){
+									$('#box').animate({'top':'0px'},900);
+								});
+								$('#boxclose').click(function(){
+								$('#box').animate({'top':'-1000px'},900);
+								});
+							});
+							$(document).ready(function(){
+							//Hide (Collapse) the toggle containers on load
+							$(".toggle_container").hide(); 
+							//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+							$(".trigger").click(function(){
+								$(this).toggleClass("active").next().slideToggle("500");
+									return false; //Prevent the browser jump to the link anchor
+							});
+												
+						});
+					</script>
+					<!-- //End-click-drop-down-menu -->
+					<!-- top-nav -->
+				</div>
+			<div class="head-info">
+				<div class="head-info-text">
+					<p>Hola, 为什么</p>
+					<h3>Fashion</h3>
+					<p class="bottom-text">一直追逐不上？ 
+						全棉布/卡牛仔布/印花布/亚麻/净色棉/全涤布/雪纺T/R斜纹蕾丝
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- content-got -->
+		<div class="content-got">
+			<div class="col-md-4 got-info">
+				<div class="got-info-text">
+					<p>想过吗？</p>
+					<h2>如果</h2>
+					<p class="top-text">
+						从打样到成品只需3天？
+					</p>
+				</div>
+				<p class="middle-text">
+					服饰配料/样布无需准备
+				</p>
+				<p class="bottom-text">
+					，活性且高效的设计，让你再也没有库存阻碍！
+				</p>
+				<p class="read">
+					<a href="#">READ THE FULL STORY</a>
+				</p>
+			</div>
+			<div class="col-md-4 img-red">
+				<img src="images/12.jpg" alt="" />
+			</div>
+			<div class="col-md-4 img-green">
+				<img src="images/14.jpg" alt="" />
+				<div class="img-info">
+					<p>让我们们重新出发</p>
+					<h3>夏季</h3>
+					<p class="bottom-text">
+						爆款
+					</p>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!-- //content-got -->
+		<!-- about-models -->
+		<div id="gallery" class="about-models">
+			<div class="grid-left">
+				<div class="grid-left-info">
+					<h3>斜纹蕾丝花型</h3>
+					<p class="bottom-text">
+						可制大衣/外套/披风
+				</div>
+			</div>
+			<div class="middle-left">
+				<div class="middle-left-top">
+					<div class="middle-left-top-info">
+						<h3>高弹性牛津</h3>
+						<p class="bottom-text">
+							Aenean venenatis arcu at magna commodo mollis.
+						</p>
+					</div>
+				</div>
+				<div class="middle-left-bottom">
+					<div class="middle-left-top-info">
+						<h3>净色棉</h3>
+						<p class="bottom-text">
+							Aenean venenatis arcu at magna commodo mollis.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="middle-right">
+				<div class="middle-right-top">
+					<div class="middle-left-top-info">
+						<h3>针织苎麻粘</h3>
+						<p class="bottom-text">
+							Aenean venenatis arcu at magna commodo mollis.
+						</p>
+					</div>
+				</div>
+				<div class="middle-right-bottom">
+					<div class="middle-left-top-info">
+						<h3>铜氨绒印花</h3>
+						<p class="bottom-text">
+							Aenean venenatis arcu at magna commodo mollis.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="middle-right-grid">
+				<div class="grid-left-info">
+					<h3>复古牛仔布</h3>
+					<p class="bottom-text">
+						Aenean venenatis arcu at magna commodo mollis. Sed vestibulum, nunc id consectetur 
+					</p>
+				</div>
+			</div>
+			<div class="grid-right">
+				<div class="grid-left-info">
+					<h3>银线平纹针织</h3>
+					<p class="bottom-text">
+						Aenean venenatis arcu at magna commodo mollis. Sed vestibulum, nunc id consectetur 
+					</p>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!-- //about-models -->
+		<!-- upload -->
+		<div class="upload">
+			<div class="upload-text">
+				<h3>对接交流会旨在联通供应链各个环节</h3>
+				<p>随着服装产业转型升级进一步推进，“供应链”成为近两年的行业热词</p>
+				<form>
+					<input type="submit" value="更多">
+				</form>
+			</div>
+			<div class="mobile-device">
+				
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!-- //upload -->
+		<!-- skills -->
+		<div id="skills" class="skills">
+			<div class="skills-info">
+				<h3>全方位数字化 <span>推送到采购商 </span>面料精品资讯</h3>
+				<p>布料在分季节设展、精准细分主题的基础上，于中部有布料馆和电子商务客服中心“纺荟”，同步设置“轻纺精选商户专区”，用创新的参展形式上引入更多精品商户。专采用自助看布形式，可通过扫描面料上贴有的参展品牌和产品信息二维码了解详情。在此期间，“纺荟”将连通采购商与线上商户，为购销双方提供舒适的洽谈空间和服务.</p>
+			</div>
+			<div class="experience years">
+				<h4>12 年</h4>
+				<p>的技术沉淀</p>
+				<div class="border"> </div>
+			</div>
+			<div class="experience awards">
+				<h4>180 多种</h4>
+				<p>布料新款印染图形设计</p>
+				<div class="border green"> </div>
+			</div>
+			<div class="experience models">
+				<h4>1058 卷</h4>
+				<p>热销现货面料</p>
+				<div class="border-red"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!-- //skills -->
+		<!-- twitter-grid -->
+		<div class="twitter-grid">
+			<img src="images/twitter.png" alt="" />
+			<p><a href="#">Fashionate<span>@lorem</span></a></p>
+			<p class="sub-text">Lorem ipsum dolor #Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+		<!-- //twitter-grid -->
+		<!-- contact -->
+		<div class="contact">
+			<div class="contact-bg">
+				<!-- container -->
+				<div class="container">
+					<div class="contact-text">
+						<div class="col-md-6">
+							<div class="about-fashion">
+								<h3>About Fashionate</h3>
+								<p>中国服装纺织行业在国民经济中占据着重要的地位，从1995年开始就已经成为全球第一大纺织品生产国和输出国，随着加入WTO及改革开放进一步深入，中国已成为全球最引人注目的地区之一，纺织行业是中国入世后的强势产业之一，其经济表现格外突出，聚焦全球经济，中国将成为全球纺织工业的头号大国。在未来几年我国纺织工业总产值增长将保持在6.3%以上，到2005年纺织工业的总产值将达1100亿元。服装成衣的总产值将达到1000亿元左右.</p>
+							</div>
+							<div class="blog">
+								<h3>From our Blog</h3>
+								<p class="caption">XXXX国际外贸布料</p>
+								<p><span>地址:广州市海珠区新港西路144号</span>
+									位于广州国际轻纺城集纺织品。交易、展示、商务三大功能于一体，构筑面料、辅料的一站式采购基地。该项目主体负一层是辅料交易广场、负二层是停车区；一至三层为面料交易中心，拥有两千多间面料商铺，常年汇集数十万种新颖面料；四层为品牌辅料常年展示中心；五至六层为集交易、办公功能为一体的品牌面料常年展示中心；七层的综合服务区内设有全面的商务配套设施，是目前国内单体建筑面积最大的“一站式”大型智能化纺织品专业市场，AB区二层饰品配件专区和四层品牌辅料常年展贸中心聚集两千家知名辅料商户，领导时尚潮流 </p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div id="contact" class="Quick-Contact">
+								<h3>快速联系我们</h3>
+								<form>
+									<input type="text" class="text" maxlength="20" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+									<input type="text" class="text" maxlength="20" value="Phone Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone Number';}">
+									<textarea class="text" value="Message" onfocus="this.value = ''" onblur="if (this.value == '') {this.value = 'Message';}" >Message</textarea>
+									<input type="submit" value="Send">
+								</form>
+							</div>
+							<div class="map">
+								<iframe src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Marion+PI&amp;aq=&amp;sll=12.963205,77.614213&amp;sspn=0.003811,0.006539&amp;ie=UTF8&amp;hq=Marion+PI&amp;hnear=&amp;radius=15000&amp;ll=45.627896,12.566851&amp;spn=0.071946,0.071946&amp;t=m&amp;output=embed"></iframe>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<!-- //container -->
+				<div class="border-bottom"> </div>
+				<!-- footer -->
+				<div class="footer">
+					<!-- container -->
+					<div class="container">
+						<div class="footer-left">
+							<p>Template by W3layouts. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="JoeJoeyMA">模板</a> - Collect from <a href="https://github.com/JoeJoeyMa" title="网页模板" target="_blank">网页模板</a></p>
+						</div>
+						<div class="footer-right">
+							<ul>
+								<li><a href="#"><span class="fb"> </span></a></li>
+								<li><a href="#"><span class="twit"> </span></a></li>
+								<li><a href="#"><span class="dribble"> </span></a></li>
+								<li><a href="#"><span class="skip"> </span></a></li>
+								<li><a href="#"><span class="msg"> </span></a></li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!-- //container -->
+				</div>
+				<!-- //footer -->
+			</div>
+		</div>
+		<!-- //contact -->
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- content-Get-in-touch -->
+	</body>
+</html>
